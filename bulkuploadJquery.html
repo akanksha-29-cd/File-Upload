@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            position: relative;
+            color: #000;
+        }
+        .bulk-upload--sec{
+            position: absolute;
+           top: 150px;
+           left: 150px;
+        }
+        form label{
+            cursor: pointer;
+        }
+        .progress-bar{
+            height: 6px;
+            width: 100%;
+            background: #d8d8d8;
+            margin-bottom: 4px;
+        }
+        .progress--1{
+            height: 100%;
+            width: 10%;
+            background: #6990f2;
+            border-radius: inherit;
+        }
+        .upload-status{
+            color: #000;
+        }
+        .disabled{
+            color: #ddd;
+            cursor: default;
+        }
+        .ccp-bulkupload__label{
+            cursor: pointer;
+            border-radius: 0;
+            border: 1px solid #5e10b1;
+            height: 50px;
+            width: 180px;
+            color: #5e10b1;
+            text-align: center;
+        }
+        /* .disabled-Btn{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    <section class="bulk-upload--sec">
+        <form action="#">
+            <label for="ccp-bulkupload__btn" class="ccp-bulkupload__label">Upload File</label>
+            <input type="file" id="ccp-bulkupload__btn" name="file" class="file-input" hidden>
+        </form>
+        <section class="progress-area">
+
+        </section>
+        
+        <section class="uploaded-area">
+
+
+        </section>
+       
+       
+    </section>
+    
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="jqeryscript.js"></script>
+</html>
