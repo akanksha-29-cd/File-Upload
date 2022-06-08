@@ -1,3 +1,45 @@
+<form class="uploadfile__form" id="uploadFileForm" enctype="multipart/form-data">
+    <label for="fileuploadButton" class="uploadfile__inputlabel">
+        File upload
+    </label>
+    <input type="file" accept="text/csv" id="fileuploadButton" name="bulkfileInput" class="uploadfile__input uploadfile__input-target">
+</form>
+
+.uploadfile__form {
+  width: 180px;
+}
+
+.uploadfile__form .uploadfile__inputlabel {
+  font-weight: normal;
+  cursor: pointer;
+  width: 180px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 11px 0;
+  background-color: #ffffff;
+  color: #5e10b1;
+  border: 1px solid #5e10b1;
+  margin: 0;
+}
+
+.uploadfile__form .uploadfile__inputlabel:hover {
+  background-color: #f6f3f9;
+  outline: none;
+  border: 1px solid #5e10b1;
+  text-decoration: underline;
+}
+.uploadfile__form:focus {
+  outline: 0;
+}
+.uploadfile__form:focus .uploadfile__inputlabel {
+  outline: 2px solid #ffbf47;
+}
+.uploadfile__form .uploadfile__input {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
